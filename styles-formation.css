@@ -1,0 +1,570 @@
+/*balises*/
+h1 {
+  font-size: 1.75em;
+  margin: 0;
+}
+h2 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+h6 {
+  font-size: 0.75em;
+  font-weight: 400;
+}
+p {
+  font-size: 1em;
+}
+
+/*colors*/
+.color-txt {
+  color: #272a36;
+}
+.color-blue {
+  color: #192963;
+}
+.color-white {
+  color: #fff;
+}
+/* background */
+.bg-gris {
+  background-color: #f0eef1;
+}
+
+
+@media (max-width: 1200px) {
+  .my-padding2, .my-padding {
+    padding: 20px;
+  }
+  
+}
+@media (max-width: 768px) {
+  .my-padding {
+    padding: 10px;
+  }
+  .my-padding2{
+    padding: 8px;
+  }
+}
+body {
+  font-family: Open Sans, Arial, sans-serif;
+  margin: 0;
+}
+.haut{
+  background-color: #1e2961;
+  height:90px;
+}
+/* a revoir ... */
+.haut img{
+  margin-top:10px;margin-left:-20px
+}
+@media (max-width: 1200px) {
+  .haut img{
+    margin-top:10px;margin-left:0px
+  }
+}
+/* ----------------*/
+/*header*/
+header {
+
+  text-align: center;
+  background-image: linear-gradient(
+    to top right,
+    rgba(166, 201, 253, 50),
+    rgba(194, 233, 251, 50)
+  );
+  min-height: 120px;
+
+  padding: 10px;
+  padding-top: 30px;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+}
+.date {
+  font-size: 0.8em;
+}
+
+.puces {
+  display: flex;
+  margin: 0 auto;
+  width: 320px;
+}
+/* ---------------------------------------------------------------------- */
+/* LES PUCES : PROMOTION, TOP FORMATION, NOUVEAUTE */
+
+.top,
+.new,
+.offre-speciale {
+  background-color: #f02878;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 8px 6px;
+  height: 14px;
+  text-align: center;
+}
+.offre-speciale {
+  height: 20px;
+  padding: 8px 10px;
+}
+.top,
+.new {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #d3562b;
+  font-size: 0.6em;
+  font-weight: bold;
+  width: 40px;
+}
+.top {
+  background-color: #477fc0;
+}
+
+/* ---------------------------------------------------------------------- */
+/* LE container central */
+/* Selon La nouvelle norme bootstrap 5.2 */
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px; /* 1320px;*/
+  }
+}
+/* enlever le container */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/*barre info*/
+.info,
+.info-left {
+  display: flex;
+}
+
+.info-left > div {
+  padding: 20px 20px 20px 0;
+  width: 200px;
+}
+.info-right {
+  padding-top: 20px;
+  width: 290px;
+  text-align: right;
+}
+.info-right a {
+  font-weight: bold;
+  color: #272a36;
+}
+/* ecran au dessus de  768px */
+@media (min-width: 1200px) {
+  .info {
+    justify-content: space-between;
+  }
+}
+/* entre 768 px et 1200 px */
+@media (max-width: 1200px) {
+  .info-left {
+    flex-wrap: wrap;
+  }
+  .info-left div {
+    width: 35%;
+    padding: 14px 0px 14px 15%;
+  }
+  .info-right {
+    padding-top: 36px;
+  }
+}
+/* en dessous de 768 px on enlève flex */
+@media (max-width: 830px) {
+  .info {
+    display: block;
+  }
+  .info-left div {
+    width: 45%;
+    padding-left: 5%;
+  }
+  .info-right {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    text-align: center;
+    background-color: #dbdbde;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/*contenu formation*/
+/* au dessus de 1200px  >1200 */
+@media (min-width: 1200px) {
+  .zone {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contenu-left {
+    width: 70%;
+  }
+  .contenu-right {
+    width: 316px;
+  }
+}
+/* en desous de 1200 px  < 1200 */
+@media (max-width: 1200px) {
+  .zone {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* RESERVER  partie de droite*/
+.reserver {
+  background-color: #272a36;
+  padding: 16px 20px 20px;
+}
+.reserver h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+.reserver button {
+  
+  display: block;
+  margin: 0 auto;
+ 
+  background-color: #097fc2;
+  border: none;
+  color: #fff;
+  padding: 12px 28px;
+  text-decoration: none;
+  margin: 20px auto;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid #097fc2;
+  text-align: center;
+}
+.reserver button:hover {
+  background-color: #272a36;
+  border: 2px solid #fff;
+}
+.reserver p,
+.reserver a {
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .reserver p {
+    text-align: center;
+  }
+}
+/* ----------------------*/
+
+
+.form-reserver select{
+	width: 100%;
+	padding: 12px 20px 12px 10px;
+	margin: 10px 0px;
+	border: none;
+	border-radius: 4px;
+	background-color: #FFF;
+	font-weight: 600;
+}
+.form-reserver option{
+
+}
+/* ----------------------*/
+/* ---------------------------------------------------------------------- */
+/* CPF  partie de droite*/
+.encart-cpf {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 112px auto;
+}
+.encart-cpf a {
+  color: #192963;
+}
+/* ecran au dessus de 1200 px  > 1200 */
+@media (min-width: 1200px) {
+  .texte-cpf {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+  .encart-cpf {
+    margin: 20px 0;
+  }
+}
+/* ecran en dessous de 1200 px  < 1200 */
+@media (max-width: 1200px) {
+  .logo-cpf {
+    grid-row: 1 / 3;
+  }
+  .encart-cpf {
+    width: 420px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .encart-cpf > div {
+    width: 100%;
+    margin: 0 20px;
+  }
+  .encart-cpf {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 112px 262px;
+  }
+}
+@media (max-width: 400px) {
+  .encart-cpf {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 112px 190px;
+  }
+}
+/* ---------------------------------------------------------------------- */
+/* petit cadre gris autour de cours officiel */
+
+.officiel {
+  margin: 8px 20px 20px 0px;
+  padding: 10px;
+  border: 1px solid #dbdbde;
+  border-radius: 6px;
+  float: left;
+  text-align: center;
+}
+
+.introduction {
+  
+  text-align: justify;
+}
+.video {
+  clear: left;
+
+  margin: 40px 0px;
+}
+@media (min-width: 1200px) {
+  .contenu-left {
+    margin-top:20px;
+  }
+}
+@media (max-width: 768px) {
+  .video iframe {
+    width:100%;
+    height: 250px;
+  }
+}
+/* ---------------------------------------------------------------------- */
+/* le cadre des promotions */
+
+.promo {
+  background-color: #272a36;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.promo h2 {
+  margin: 0;
+}
+
+.promo > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.promo > div > div {
+  background-color: #fff;
+  border-radius: 6px;
+  width: 300px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 840px) {
+  .promo h2 {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .promo > div > div {
+    width: 200px;
+  }
+  .cartouche{
+    font-size: 0.7em;
+  }
+  .promo > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .promo{
+    padding:20px;
+  }
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+.menu-formation .my-padding{
+  padding-top: 0;
+}
+.ombre{
+  box-shadow: 2px 6px 10px -1px rgba(33,33,33,0.2);
+}
+.menu-formation{
+  margin-top:30px;
+  height: 50px;
+}
+.menu-formation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu-formation a {
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+
+
+.menu {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.menu::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.menu:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.menu-formation a:first-child{padding-left:0}
+
+
+.formation-details{
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .ombre{
+    display: none;
+  }
+}
+/* ---------------------------------------------------------------------- */
+.holder .item {
+  border: 1px solid #dee2e6;
+  margin: 20px 0px;
+  /* padding-bottom: 10px; */
+}
+.holder .accordion {
+  color: #097fc2;
+  padding-left:20px;
+  font-size: 1.125em;
+}
+.accordion-title{
+  cursor: pointer;
+  display:flex;
+  justify-content: space-between;
+}
+.accordion-title:hover{
+  /* background-color: #eee; */
+}
+.holder .accordion-content {
+  padding: 0 18px 18px 18px;
+  font-size: 1em;
+ 
+}
+.fleche{
+  font-size: 1.2rem;
+  color: #097fc2;
+  position:relative;
+  top:6px;
+  transform: rotate(-45deg);
+  margin-right:10px;
+}
+@media (max-width: 768px) {
+  .hidden-mobile .accordion-content{
+    display:none;
+  }
+  .hidden-mobile .fleche{
+    top : -10px;
+    left : -20px;
+    transform:rotate(135deg);
+  }
+  .holder .accordion-content {
+    padding: 0 8px 8px 8px;
+    font-size: 0.8em;
+   
+  }
+}
+.hidden-all .accordion-content{
+  display:none;
+}
+.hidden-all .fleche{
+  top : -10px;
+  left : -20px;
+  transform:rotate(135deg);
+}
+
+
+/*******/
+/* modif Jeff */
+.holder a{
+  color:#097fc2;
+}
+h2.accordion {
+  padding-bottom: 4px!important;
+}
+.accordion-content p{
+  margin: 0 10px 0px 10px;
+  text-align: justify;
+}
+
+.accordion-content ul{
+  list-style-type: none;
+  margin: 0 10px 10px 10px;
+  padding: 0;
+  
+}
+/* h2 deviendrait h3 */
+.accordion-content h2{
+  font-weight: bold;
+  font-size: 1em;
+  margin:0;
+  margin-left: 6px;
+}
+
+.plan ul li {
+    background-image: url(puce-ronde.png);
+    background-repeat: no-repeat;
+    background-position: left 10px;
+    padding-left: 15px;
+    line-height: normal;
+}
+/* FIN accordion NEW */
